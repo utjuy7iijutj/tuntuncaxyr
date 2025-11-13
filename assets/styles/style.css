@@ -1,0 +1,130 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+.first_block{
+    justify-content: space-between;
+}
+.first_block .container{
+    border-radius: 20px;
+    background-color: rgb(232, 234, 237);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 55%;
+}
+.first_block .container .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+.first_block .container:nth-child(2){
+    width: 40%;
+    background: url(https://static.life.ru/publications/2025/3/30/442811887517.96893.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 530px;
+}
+.first_block .container:nth-child(2) .header{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.first_block .container:nth-child(2) .header button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.733);
+    border: none;
+    color: rgb(100, 100, 100);
+    margin-right: 20px;
+}
+
+.first_block .container:nth-child(1) .header h5{
+    font-size: 20px;
+}
+.first_block .container:nth-child(1) .header a{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+}
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.first_block .container:nth-child(1) h1{
+    margin: 0;
+    margin-top: 40px;
+    font-size: 40px;
+}
+.first_block .container:nth-child(1) .line{
+    background-color: rgb(137, 156, 140);
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
+}
+.first_block .container:nth-child(1) .href_animation:hover .line{
+    transform: scaleX(1);
+}
+.first_block .container:nth-child(1) .content p{
+    margin: 0;
+    margin-top: 20px;
+}
+.first_block .container:nth-child(1) .content{
+    width: 80%;
+}
+
+.first_block .container:nth-child(1) .content button{
+    background-color: rgb(55, 71, 56);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 30px;
+}
+
+.first_block .container .cards .card_our img{
+    width: 50px;
+    border-radius: 100%;
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    left: 80px;
+}
+.first_block .container .cards .card_our{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    position: relative;
+}
+.first_block .container .cards .card_our h4{
+    font-size: 40px;
+    margin: 0;
+    color: rgba(145, 145, 145, 0.784);
+}
+.first_block .container .cards .card_our p{
+    margin: 0;
+    margin-top: 20px;
+    color: rgba(145, 145, 145, 0.784);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.first_block .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
